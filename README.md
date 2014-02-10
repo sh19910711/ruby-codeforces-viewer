@@ -11,7 +11,43 @@ A simple command-line viewer for Codeforces.
 
 ## Usage
 
+### How to view problem statement
 
+    $ codeforces-viewer -c {contest-id} -p {problem-id}
+
+#### Example usage
+
+    $ codeforces-viewer -c 123 -p A
+
+#### One More Thing: Use pager command [less, more, etc...]
+
+    $ codeforces-viewer -c 123 -p A | less -R
+
+### Download sample input/output
+
+#### Download sample input
+
+    $ codeforces-viewer -c 123 -p A -i 0 > input.all.txt
+
+You can specify input id as follow:
+
+    $ codeforces-viewer -c 123 -p A -i 1 > input.1.txt
+
+#### Donwload sample output
+
+    $ codeforces-viewer -c 123 -p A -o 0 > input.all.txt
+
+You can also specify output id as follow:
+
+    $ codeforces-viewer -c 123 -p A -o 2 > output.2.txt
+
+#### Disable to cache
+
+Downloaded files (currently, html files only) are cached (in `~/.codeforces-viewer/cache/*`) by default.
+
+When you don't want to cache them, add `--no-cache` option as follow:
+
+    $ codeforces-viewer -c 123 -p A --no-cache | less -R
 
 ## Contributing
 
