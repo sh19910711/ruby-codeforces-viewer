@@ -1,0 +1,17 @@
+language: ruby
+rvm:
+  - 2.1.0
+  - 2.0.0
+  - 1.9.3
+install:
+  - export NOKOGIRI_USE_SYSTEM_LIBRARIES="YES"
+  - bundle install
+script:
+  - bundle exec rake spec
+deploy:
+  provider: rubygems
+  api_key:
+    master:
+      secure: "dXTqo1MMFAA4xaXCewzAxGqiW17JmwVJ842c0pBzC6wlbayzG+zsnlRErxMtWn3XLG8OaaYytqmg/hZIW6vkn7uMekCFh55sPaEU7A8aCd4BPJlepAhPrUep8zMFPkm++dkifEYmO9b1X8tH6hhmfQHStV5SAMlVAd0INQwP7HU="
+  gem:
+    master: codeforces-viewer
