@@ -18,11 +18,10 @@ describe Codeforces::Viewer::Viewer do
     )
   end
 
-  context :get_problem_text do
-    it do
-      ret = @viewer.fetch_problem_text '350', 'A'
-      # TODO: improve here
-    end
+  context :fetch_problem_text do
+    subject(:ret) { @viewer.fetch_problem_text '350', 'A' }
+    it { ret[:round].should eq "Codeforces Round #203 (Div. 2)" }
+    it { ret[:body].should include "Valera" }
   end
 
   context :get_round_info do
