@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Codeforces::Viewer::VERSION
   spec.authors       = ["Hiroyuki Sano"]
   spec.email         = ["sh19910711@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{A simple command-line viewer for Codeforces}
+  spec.description   = %q{A simple command-line viewer for Codeforces}
   spec.homepage      = ""
   spec.license       = "MIT"
 
