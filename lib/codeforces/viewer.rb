@@ -1,7 +1,5 @@
-require "codeforces/viewer/version"
-
-module Codeforces
-  module Viewer
-    # Your code goes here...
-  end
-end
+require_relative 'viewer/application'
+require_relative 'viewer/viewer'
+require_relative 'viewer/cacher'
+require_relative 'viewer/render'
+require_relative 'viewer/version'
